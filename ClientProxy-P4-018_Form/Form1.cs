@@ -55,5 +55,26 @@ namespace ClientProxy_P4_018_Form
             c = a / b;
             textBox12.Text = c.ToString();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                a.X = Int32.Parse(textBox13.Text);
+                a.Y = Int32.Parse(textBox14.Text);
+                b.X = Int32.Parse(textBox15.Text);
+                b.Y = Int32.Parse(textBox16.Text);
+
+                double XKoordinat = a.X - b.X;
+                double YKoordinat = a.Y - b.Y;
+                double HasilKoordinat = Math.Sqrt(Math.Pow(XKoordinat, 2) +
+                Math.Pow(YKoordinat, 2));
+
+                textBox17.Text = HasilKoordinat.ToString();
+
+            }
+            catch { }
+        }
     }
 }
