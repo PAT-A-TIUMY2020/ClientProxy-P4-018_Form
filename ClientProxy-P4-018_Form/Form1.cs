@@ -28,5 +28,14 @@ namespace ClientProxy_P4_018_Form
             c = a + b;
             textBox9.Text = c.ToString();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int a, b, c;
+            a = Convert.ToInt32(textBox3.Text);
+            b = Convert.ToInt32(textBox4.Text);
+            c = a - b;
+            textBox10.Text = c.ToString();
+        }
     }
 }
