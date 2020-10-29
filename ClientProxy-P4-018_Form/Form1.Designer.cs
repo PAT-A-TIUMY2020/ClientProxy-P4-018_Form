@@ -203,9 +203,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(133, 252);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(13, 17);
+            this.label7.Size = new System.Drawing.Size(14, 17);
             this.label7.TabIndex = 20;
-            this.label7.Text = "*";
+            this.label7.Text = "x";
             // 
             // textBox3
             // 
@@ -270,6 +270,7 @@
             this.button3.TabIndex = 16;
             this.button3.Text = "=";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox7
             // 
